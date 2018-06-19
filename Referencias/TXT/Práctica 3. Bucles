@@ -1,0 +1,12 @@
+## Definir bucle de una variable
+
+for x in range(3): #In range 3= [0,1,2]
+    print ("We're on time %d" % (x))
+    
+## Definir bucle de tres variables
+
+for x in range(3): #In range 3= [0,1,2]
+    for y in range(4):
+        z=x+y
+        print ("Hora: %d" % (x) + ", Min: %d" % (y) + ", Seg: %d" % (z))
+    

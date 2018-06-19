@@ -1,0 +1,47 @@
+## Variables de entrada
+a= 1.03
+b=503
+c= 2** 2
+print("a= "+str(a)+" b= "+str(b)+" c= "+str(c))
+
+## Suma 
+d= a+b
+e= a+c
+f= d+e-b
+print("d= "+str(d)+" e= "+str(e)+" f= "+str(f))
+
+## Multiplicación 
+ab= a*b
+bc= b*c
+g= f*(-a)
+h= f/a
+print("ab= "+str(ab)+" bc= "+str(bc)+" g= "+str(g)+" h= "+str(h))
+
+## Operaciones con vectores y matrices
+conda install -c anaconda numpy 
+
+import numpy as np
+
+A= [0,1,2,3,4,5]
+B= np.zeros(6)
+C= np.ones(6)
+D= np.matrix([[0,1,2,3,4,5],[6,7,8,9,10,11]])
+E= [[1,0],[0,1]]
+
+# Suma
+F= np.sum([0.5, 1.5])
+G= np.sum(A,C)
+print("A= "+str(A)+" B= "+str(B)+" C= "+str(C)+" D= "+str(D))
+print("E= "+str(E)+" F= "+str(F)+" G= "+str(G))
+
+# Multiplicación
+x1 = np.arange(9.0).reshape((3, 3))
+print(x1)
+x2 = np.arange(3.0)
+print(x2)
+np.multiply(x1, x2)
+
+# Producto punto
+H = np.eye(2)
+I = np.ones((2, 2)) * 2
+J= H.dot(I)
